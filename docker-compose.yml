@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  api:
+    container_name: api
+    build: .
+    tty: true
+    volumes:
+      - .:/code
+      - ~/.ssh:/home/docker-user/.ssh
+    ports:
+      - "8000:8000"
+    environment:
+      - DJANGO_SETTINGS_MODULE=config.settings
+      - SECRET_KEY=${SECRET_KEY}
