@@ -11,6 +11,8 @@ USER docker-user
 
 RUN python -m pip install Django
 
+WORKDIR /code
+
 # FROM base AS dev
 
 # FROM base AS prod
