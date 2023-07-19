@@ -1,6 +1,6 @@
 from Application.UseCase import CreateService
-from Infrastructure.inc.Console import CreateController
-from Infrastructure.out.Persistence import Adapter
+from Infrastructure.In.Console import CreateController
+from Infrastructure.Out.Persistence import Adapter
 
 
 class App:
