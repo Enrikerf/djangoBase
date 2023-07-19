@@ -9,8 +9,6 @@ RUN apt update && apt install -y build-essential curl vim fish git sudo \
 
 USER docker-user
 
-RUN python -m pip install Django
-
 WORKDIR /code
 
 # FROM base AS dev
